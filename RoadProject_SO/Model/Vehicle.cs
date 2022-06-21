@@ -128,6 +128,10 @@ namespace RoadProject_SO.Model
         /// </summary>
         protected virtual void MoveVehicleForward()
         {
+
+            //Car _nextar = cars[NextVehicleIndex];
+
+
             // Don't let vehicle pass node
             double _currentSpeed = this.CurrentSpeed;
             if (DistanceToTravel - TraveledDistance < _currentSpeed)
@@ -166,6 +170,11 @@ namespace RoadProject_SO.Model
             if (PublicAvaliableReferences.IsVehicleInTheWay(this))
             {
                 IsBehindVehicle = true;
+                if (PublicAvaliableReferences.CanVehicleOvertake(this))
+                {
+                    this.CurrentSpeed = this.VehicleSpeed;
+                    return;
+                }
                 this.CurrentSpeed = PublicAvaliableReferences.GetNextVehicleSpeed(this);
             }
             else

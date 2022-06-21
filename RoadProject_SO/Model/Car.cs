@@ -30,11 +30,13 @@ namespace RoadProject_SO.Model
 
         public override void UpdateVehicle()
         {
+          //  Car _nextcar = cars[NextVehicleIndex];
+
             if (!IsActive)
                 return;
 
             //There are more nodes outside of Canvas, skipping them for optimalization
-            if (NodesLeftToTravel == 2)
+            if (NodesLeftToTravel == 2 || NodesLeftToTravel == 16)
             {
                 //Vehicle Arrived
                 DisableVehicle();
@@ -85,9 +87,12 @@ namespace RoadProject_SO.Model
         /// <summary>
         /// Resets <see cref="Car"/> position to the first <see cref="Node"/>
         /// </summary>
-        public void ResetPosition()
+        public void ResetPosition(int distance)
         {
-            this.TraveledDistance = 0;
+            //if(distance!=0)
+
+
+            this.TraveledDistance = distance;
             this.CurrentSpeed = VehicleSpeed;
             this.positionVector = GetNextNode(NodesLeftToTravel).Vector;
             this.DistanceToTravel = positionVector.Length;
