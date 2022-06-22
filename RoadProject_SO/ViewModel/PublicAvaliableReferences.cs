@@ -215,36 +215,36 @@ namespace RoadProject_SO.ViewModel
             //Cars
             _path = $"{_defaultResourcesFolder}{CAR_RESOURCES_FOLDER}{CAR_IMAGE_PREFIX}";
             for (int i = 0; i < CAR_DIRECTIONS; i++)
-                carsBitmaps[i] = new BitmapImage(new Uri($"{_path}{i}{_fileExtension}"));
-                //carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_0.png"));
+               // carsBitmaps[i] = new BitmapImage(new Uri($"{_path}{i}{_fileExtension}"));
+                carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_0.png"));
             
 
 
             //Trains
             _path = $"{_defaultResourcesFolder}{TRAIN_RESOURCES_FOLDER}{TRAIN_IMAGE_PREFIX}";
-          trainsBitmaps[0] = new BitmapImage(new Uri($"{_path}{_fileExtension}"));
-          //  trainsBitmaps[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Trains\\train.png"));
+          //trainsBitmaps[0] = new BitmapImage(new Uri($"{_path}{_fileExtension}"));
+           trainsBitmaps[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Trains\\train.png"));
 
 
             //Lights
             _path = $"{_defaultResourcesFolder}{LIGHT_RESOURCES_FOLDER}{LIGHT_IMAGE_PREFIX}";
-            Light.lightsOff = new BitmapImage(new Uri($"{_path}{0}{_fileExtension}"));
-            //Light.lightsOff = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_0.png"));
-           Light.lightsOn[0] = new BitmapImage(new Uri($"{_path}{1}{_fileExtension}"));
-           // Light.lightsOn[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_1.png"));
-            Light.lightsOn[1] = new BitmapImage(new Uri($"{_path}{2}{_fileExtension}"));
-           // Light.lightsOn[1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_2.png"));
+            //Light.lightsOff = new BitmapImage(new Uri($"{_path}{0}{_fileExtension}"));
+            Light.lightsOff = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_0.png"));
+           //Light.lightsOn[0] = new BitmapImage(new Uri($"{_path}{1}{_fileExtension}"));
+            Light.lightsOn[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_1.png"));
+            //Light.lightsOn[1] = new BitmapImage(new Uri($"{_path}{2}{_fileExtension}"));
+            Light.lightsOn[1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_2.png"));
 
             //Turnpikes
             _path = $"{_defaultResourcesFolder}{TURNPIKE_RESOURCES_FOLDER}{TURNPIKE_IMAGE_PREFIX}";
-            Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"{_path}{0}_{0}{_fileExtension}"));
-           // Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_0.png"));
-           Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"{_path}{0}_{1}{_fileExtension}"));
-          //  Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_1.png"));
-            Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"{_path}{1}_{0}{_fileExtension}"));
-           // Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_0.png"));
-            Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"{_path}{1}_{1}{_fileExtension}"));
-           // Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_1.png"));
+            //Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"{_path}{0}_{0}{_fileExtension}"));
+            Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_0.png"));
+           //Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"{_path}{0}_{1}{_fileExtension}"));
+            Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_1.png"));
+            //Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"{_path}{1}_{0}{_fileExtension}"));
+            Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_0.png"));
+            //Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"{_path}{1}_{1}{_fileExtension}"));
+            Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_1.png"));
         }
 
         //XD
@@ -603,24 +603,54 @@ namespace RoadProject_SO.ViewModel
 
         private static Vehicle GetNextCar(Vehicle lastvehicle)
         {
-
-
             Vehicle nextvehicle = lastvehicle;
-            foreach (var a in cars)
+
+            //int nodes = lastvehicle.NodesLeftToTravel;
+            if (lastvehicle.NodesLeftToTravel > 16)
             {
-               // a.NodesLeftToTravel
-                if (a.TraveledDistance > lastvehicle.TraveledDistance)
+                foreach (var a in cars)
                 {
-                    if (nextvehicle == lastvehicle)
+                    // a.NodesLeftToTravel
+                    if (a.TraveledDistance > lastvehicle.TraveledDistance )
                     {
-                        nextvehicle = a;
-                    }
-                    else if (a.TraveledDistance < nextvehicle.TraveledDistance )
-                    {
-                        nextvehicle = a;
+                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel > 16)
+                        {
+                            nextvehicle = a;
+                        }
+                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel > 16)
+                        {
+                            nextvehicle = a;
+                        }
                     }
                 }
+
             }
+            else
+            {
+                foreach (var a in cars)
+                {
+
+                    // a.NodesLeftToTravelll
+
+                    // a.NodesLeftToTravel
+
+                    if (a.TraveledDistance > lastvehicle.TraveledDistance)
+                    {
+                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel < 15)
+                        {
+                            nextvehicle = a;
+                        }
+                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel < 15)
+                        {
+                            nextvehicle = a;
+                        }
+                    }
+                }
+
+            }
+
+
+
             return nextvehicle;
         }
 
@@ -692,7 +722,7 @@ namespace RoadProject_SO.ViewModel
         public static bool CanVehicleOvertake(Vehicle thisVehicle)
         {
             //thisVehicle.
-            Vehicle opositevehicle;
+           
 
 
             if (thisVehicle.NodesLeftToTravel > 16)

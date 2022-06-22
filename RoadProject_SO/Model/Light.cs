@@ -30,7 +30,7 @@ namespace RoadProject_SO.Model
             UpdateGraphic();
         }
 
-        /// <summary>
+        /// <summary>m
         /// Sets whether <see cref="Light"/> is blinking
         /// </summary>
         /// <param name="status">true if the <see cref="Light"/> is blinking</param>
