@@ -606,18 +606,18 @@ namespace RoadProject_SO.ViewModel
             Vehicle nextvehicle = lastvehicle;
 
             //int nodes = lastvehicle.NodesLeftToTravel;
-            if (lastvehicle.NodesLeftToTravel > 16)
+            if (lastvehicle.NodesLeftToTravel >= 16)
             {
                 foreach (var a in cars)
                 {
                     // a.NodesLeftToTravel
                     if (a.TraveledDistance > lastvehicle.TraveledDistance )
                     {
-                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel > 16)
+                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel >= 16)
                         {
                             nextvehicle = a;
                         }
-                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel > 16)
+                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel >= 16)
                         {
                             nextvehicle = a;
                         }
@@ -636,11 +636,11 @@ namespace RoadProject_SO.ViewModel
 
                     if (a.TraveledDistance > lastvehicle.TraveledDistance)
                     {
-                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel < 15)
+                        if (nextvehicle == lastvehicle && a.NodesLeftToTravel < 16)
                         {
                             nextvehicle = a;
                         }
-                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel < 15)
+                        else if (a.TraveledDistance < nextvehicle.TraveledDistance && a.NodesLeftToTravel <16)
                         {
                             nextvehicle = a;
                         }
