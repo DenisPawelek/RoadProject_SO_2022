@@ -19,6 +19,7 @@ namespace RoadProject_SO.Controllers
         public bool IsAlive => thread.IsAlive;
         public void Abort() => thread.Abort();
 
+
         // Override in base class
         protected abstract void RunThread();
     }

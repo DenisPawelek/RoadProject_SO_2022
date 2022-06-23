@@ -216,7 +216,7 @@ namespace RoadProject_SO.ViewModel
             _path = $"{_defaultResourcesFolder}{CAR_RESOURCES_FOLDER}{CAR_IMAGE_PREFIX}";
             for (int i = 0; i < CAR_DIRECTIONS; i++)
                // carsBitmaps[i] = new BitmapImage(new Uri($"{_path}{i}{_fileExtension}"));
-                carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_0.png"));
+                carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_"+Convert.ToString(i)+".png"));
             
 
 
