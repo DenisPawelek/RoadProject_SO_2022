@@ -67,9 +67,9 @@ namespace RoadProject_SO.ViewModel
         protected static Canvas? canvas;
 
         protected static int RailsNodeIndexTop { get; set; } = 21;
-        protected static int RailsNodeIndexBottom { get; set; } = 11;
+        protected static int RailsNodeIndexBottom { get; set; } = 10;
 
-        private static readonly float[,] DIRECTIONS = 
+        private static readonly float[,] DIRECTIONS =
         {
             // Y value increases the lower object is on canvas - Y value is inversed
 
@@ -215,39 +215,39 @@ namespace RoadProject_SO.ViewModel
             //Cars
             _path = $"{_defaultResourcesFolder}{CAR_RESOURCES_FOLDER}{CAR_IMAGE_PREFIX}";
             for (int i = 0; i < CAR_DIRECTIONS; i++)
-               // carsBitmaps[i] = new BitmapImage(new Uri($"{_path}{i}{_fileExtension}"));
-                carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_"+Convert.ToString(i)+".png"));
-            
+                carsBitmaps[i] = new BitmapImage(new Uri($"{_path}{i}{_fileExtension}"));
+            //carsBitmaps[i] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Cars\\car_0.png"));
+
 
 
             //Trains
             _path = $"{_defaultResourcesFolder}{TRAIN_RESOURCES_FOLDER}{TRAIN_IMAGE_PREFIX}";
-          //trainsBitmaps[0] = new BitmapImage(new Uri($"{_path}{_fileExtension}"));
-           trainsBitmaps[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Trains\\train.png"));
+            trainsBitmaps[0] = new BitmapImage(new Uri($"{_path}{_fileExtension}"));
+            //  trainsBitmaps[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Trains\\train.png"));
 
 
             //Lights
             _path = $"{_defaultResourcesFolder}{LIGHT_RESOURCES_FOLDER}{LIGHT_IMAGE_PREFIX}";
-            //Light.lightsOff = new BitmapImage(new Uri($"{_path}{0}{_fileExtension}"));
-            Light.lightsOff = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_0.png"));
-           //Light.lightsOn[0] = new BitmapImage(new Uri($"{_path}{1}{_fileExtension}"));
-            Light.lightsOn[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_1.png"));
-            //Light.lightsOn[1] = new BitmapImage(new Uri($"{_path}{2}{_fileExtension}"));
-            Light.lightsOn[1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_2.png"));
+            Light.lightsOff = new BitmapImage(new Uri($"{_path}{0}{_fileExtension}"));
+            //Light.lightsOff = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_0.png"));
+            Light.lightsOn[0] = new BitmapImage(new Uri($"{_path}{1}{_fileExtension}"));
+            // Light.lightsOn[0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_1.png"));
+            Light.lightsOn[1] = new BitmapImage(new Uri($"{_path}{2}{_fileExtension}"));
+            // Light.lightsOn[1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Lights\\lights_2.png"));
 
             //Turnpikes
             _path = $"{_defaultResourcesFolder}{TURNPIKE_RESOURCES_FOLDER}{TURNPIKE_IMAGE_PREFIX}";
-            //Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"{_path}{0}_{0}{_fileExtension}"));
-            Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_0.png"));
-           //Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"{_path}{0}_{1}{_fileExtension}"));
-            Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_1.png"));
-            //Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"{_path}{1}_{0}{_fileExtension}"));
-            Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_0.png"));
-            //Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"{_path}{1}_{1}{_fileExtension}"));
-            Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_1.png"));
+            Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"{_path}{0}_{0}{_fileExtension}"));
+            // Turnpike.TurnpikeGraphic[0, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_0.png"));
+            Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"{_path}{0}_{1}{_fileExtension}"));
+            //  Turnpike.TurnpikeGraphic[0, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_0_1.png"));
+            Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"{_path}{1}_{0}{_fileExtension}"));
+            // Turnpike.TurnpikeGraphic[1, 0] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_0.png"));
+            Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"{_path}{1}_{1}{_fileExtension}"));
+            // Turnpike.TurnpikeGraphic[1, 1] = new BitmapImage(new Uri($"C:\\Users\\hindu\\source\\repos\\RoadProject_SO_2022\\RoadProject_SO\\Resources\\Images\\Objects\\Turnpikes\\turnpike_1_1.png"));
         }
 
-        //XD
+        
         #endregion
 
         #region Pools Creation
@@ -301,17 +301,33 @@ namespace RoadProject_SO.ViewModel
 
                 Car car = factory.CreateCar(nodesCount, nextIndex);
 
-                //set first node as car's stariting position
-                car.ActualPosition = carNodes[0].GetNodePosition();
 
-                //assign first grahpic to the car
-                car.CurrentGraphics = carsBitmaps[(int)Enums.GraphicDirection.LEFT];
+                Random random = new();
+                int carsFromRight = random.Next(0, SPAWN_CAR_LIMIT);
+                int carsFromLeft = random.Next(0, SPAWN_CAR_LIMIT - carsFromRight);
 
-                if (i != 0)
+                if (i < carsFromRight)
                 {
-                    car.EnableVehicle();
-                    car.SpawnDelay = 200 * i;
+                    //set first node as car's stariting position
+                    car.ActualPosition = carNodes[0].GetNodePosition();
+
+                    //assign first grahpic to the car
+                    car.CurrentGraphics = carsBitmaps[(int)Enums.GraphicDirection.LEFT];
                 }
+                else
+                {
+                    //set first node as car's stariting position
+                    car.ActualPosition = carNodes[16].GetNodePosition();
+
+                    //assign first grahpic to the car
+                    car.CurrentGraphics = carsBitmaps[(int)Enums.GraphicDirection.LEFT];
+                }
+
+                //if (i != 0)
+                //{
+                //car.EnableVehicle();
+                car.SpawnDelay = 200 * i;
+                //}
 
                 cars.Add(car);
 
@@ -446,11 +462,6 @@ namespace RoadProject_SO.ViewModel
                     for (int i = 0; i < cars.Count; i++)
                     {
                         Car _car = cars[i];
-                 
-
-
-
-                        
 
                         //if car is not active, revive it after SpawnDelay time
                         if (!_car.IsActive)
@@ -574,34 +585,30 @@ namespace RoadProject_SO.ViewModel
 
         private static void ReincarnateCar(Car car)
         {
-            car.IsActive = true;
-
-            int distance;
-            
             Random random = new();
-            if (random.Next(0, 10) % 2 == 0)
-            {
-                car.NodesLeftToTravel = carNodes.Count;
-                distance = 0;
-        }
-            else
-            {
-                distance = 0;
-                car.NodesLeftToTravel = carNodes.Count/2;
-            }
-
-    car.VehicleSpeed = random.NextDouble() * 2.0f + 1;
-            car.ResetPosition(distance);
+            car.IsActive = true;
+            car.NodesLeftToTravel = carNodes.Count;
+            car.VehicleSpeed = random.NextDouble() * 2.0f + 1;
+            car.ResetPosition();
             car.EnableVehicle();
+
+            //if (random.Next(0, 10) % 2 == 0)
+            //{
+            //    car.NodesLeftToTravel = carNodes.Count;
+            //    distance = 0;
+            //}
+            //else
+            //{
+            //    distance = 0;
+            //    car.NodesLeftToTravel = carNodes.Count / 2;
+            //}
         }
 
         #endregion
 
         #region Checks
 
-
-
-        private static Vehicle GetNextCar(Vehicle lastvehicle)
+        private static Vehicle GetNextCar(Vehicle prevVehicle)
         {
             Vehicle nextvehicle = lastvehicle;
 
@@ -654,33 +661,17 @@ namespace RoadProject_SO.ViewModel
             return nextvehicle;
         }
 
-
         public static bool IsAnyVehicleInFront(Vehicle thisVehicle)
         {
-
             lock (cars)
             {
-                if (!BasicChecksForVehicle(thisVehicle))
+                if (BasicChecksForVehicle(thisVehicle) || thisVehicle.NextVehicleIndex <= -1)
                 {
-                    if (thisVehicle.NextVehicleIndex <= -1)
-                    {
-                        Vehicle nextCar = GetNextCar(thisVehicle);
-                        bool vehicleExists = nextCar.IsActive && nextCar.CanColide && !nextCar.Arived();
-                        return vehicleExists;
-
-                    }
-                    return false;
-                }
-
-
-                else
-                {
-                    Vehicle nextCar = GetNextCar(thisVehicle);
-                    bool vehicleExists = nextCar.IsActive && nextCar.CanColide && !nextCar.Arived();
+                    Vehicle nextVehicle = GetNextCar(thisVehicle);
+                    bool vehicleExists = nextVehicle.IsActive && nextVehicle.CanColide && !nextVehicle.Arived();
                     return vehicleExists;
                 }
-
-               
+                return false;
             }
         }
 
@@ -691,39 +682,31 @@ namespace RoadProject_SO.ViewModel
 
             lock (cars)
             {
-                if (!BasicChecksForVehicle(thisVehicle))
+                if (BasicChecksForVehicle(thisVehicle) || thisVehicle.NextVehicleIndex <= -1)
                 {
-                    if (thisVehicle.NextVehicleIndex <= -1)
-                    {
-                        Vehicle nextCar2 = GetNextCar(thisVehicle);
-                        double nextVehicleBack2 = nextCar2.TraveledDistance;
-                        double thisVehicleFront2 = thisVehicle.TraveledDistance;
-                        double differenceInDistance2 = Math.Abs(nextVehicleBack2 - thisVehicleFront2);
-                        bool areTooClose2 = differenceInDistance2 < Vehicle.VEHICLE_DISTANCE_OFFSET;
-                        return areTooClose2;
+                    Vehicle nextCar = GetNextCar(thisVehicle);
 
-                    }
-                    return false;
+                    //calculate distance between two vehicles
+                    double nextVehicleBack = nextCar.TraveledDistance;
+                    double thisVehicleFront = thisVehicle.TraveledDistance;
+                    double differenceInDistance = Math.Abs(nextVehicleBack - thisVehicleFront);
+                    bool areTooClose = differenceInDistance < Vehicle.VEHICLE_DISTANCE_OFFSET;
+                    return areTooClose;
                 }
-
-                Vehicle nextCar = GetNextCar(thisVehicle);
-
-                //calculate distance between two vehicles
-                double nextVehicleBack = nextCar.TraveledDistance;
-                double thisVehicleFront = thisVehicle.TraveledDistance;
-                double differenceInDistance = Math.Abs(nextVehicleBack - thisVehicleFront);
-                bool areTooClose = differenceInDistance < Vehicle.VEHICLE_DISTANCE_OFFSET;
-                return areTooClose;
+                return false;
             }
         }
 
-
-
+        //DO DOKOŃCZENIA!
+        /// <summary>
+        /// Check if this vehicle can overtake
+        /// </summary>
+        /// <param name="thisVehicle"></param>
+        /// <returns></returns>
         public static bool CanVehicleOvertake(Vehicle thisVehicle)
         {
             //thisVehicle.
            
-
 
             if (thisVehicle.NodesLeftToTravel > 16)
             {
@@ -740,7 +723,6 @@ namespace RoadProject_SO.ViewModel
                         {
                             return false;
                         }
-
                     }
                 }
                 return true;
@@ -749,32 +731,29 @@ namespace RoadProject_SO.ViewModel
 
             else
             {
-
                 foreach (var opositecar in cars)
                 {
                     if (opositecar.NodesLeftToTravel > 15)
-                {
-                    if (Math.Abs(opositecar.ActualPosition.X - thisVehicle.ActualPosition.X) > 50 && Math.Abs(opositecar.ActualPosition.Y - thisVehicle.ActualPosition.Y) > 10)
                     {
+                        if (Math.Abs(opositecar.ActualPosition.X - thisVehicle.ActualPosition.X) > 50 && Math.Abs(opositecar.ActualPosition.Y - thisVehicle.ActualPosition.Y) > 10)
+                        {
 
 
-                    }
-                    else
-                    {
-                        return false;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
                     }
 
                 }
-
-                    }
                 return true;
 
             }
 
-                return true;
+            return true;
         }
-
-
 
         /// <summary>
         /// Checks if the next Vehicle is valid
@@ -827,6 +806,7 @@ namespace RoadProject_SO.ViewModel
         #region Gets
 
         public static Node GetCarNode(int nodesLeftToTravel) => GetNode(carNodes, nodesLeftToTravel);
+
         public static Node GetTrainNode(int nodesLeftToTravel) => GetNode(trainNodes, nodesLeftToTravel);
 
         public static Node GetNode(List<Node> nodesArray, int rawNodesLeftToTravel)
@@ -885,16 +865,12 @@ namespace RoadProject_SO.ViewModel
             }
         }
 
-
-
-
-
         public static double GetNextVehicleSpeed(Vehicle vehicle)
         {
             lock (cars)
             {
                 Vehicle n = GetNextCar(vehicle);
-            
+
                 return n.CurrentSpeed;
             }
         }

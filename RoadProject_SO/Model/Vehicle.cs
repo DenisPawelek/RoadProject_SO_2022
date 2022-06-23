@@ -93,6 +93,7 @@ namespace RoadProject_SO.Model
             if (CanColide)
                 LimitSpeedByVehicleDistance();
 
+            //GetNewGraphic();
             //Apply Speed to position
             MoveVehicleForward();
 

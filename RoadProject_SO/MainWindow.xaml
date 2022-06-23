@@ -13,47 +13,48 @@
     <Canvas x:Name="Canvas" Focusable="true" Height="600"  Width="800">
         <Image Source="/Resources/Images/Map/map.png" Height="600" Width="800" Panel.ZIndex="0"></Image>
 
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="1002" Canvas.Top="470" Tag="C" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="654" Canvas.Top="470" Tag="C" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="165" Canvas.Top="465" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="113" Canvas.Top="427" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="113" Canvas.Top="386" Tag="C" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="137" Canvas.Top="353" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="170" Canvas.Top="338" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="573" Canvas.Top="338" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="624" Canvas.Top="315" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="624" Canvas.Top="290" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="624" Canvas.Top="218" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="588" Canvas.Top="155" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="501" Canvas.Top="145" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="322" Canvas.Top="145" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="20" Canvas.Top="145"  Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-113" Canvas.Top="145" Tag="C" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-113" Canvas.Top="180" Tag="C"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="1002" Canvas.Top="470" Tag="C" Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="654" Canvas.Top="470" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="142" Canvas.Top="465" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="113" Canvas.Top="434" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="108" Canvas.Top="386" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="142" Canvas.Top="353" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="200" Canvas.Top="348" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="562" Canvas.Top="343" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="585" Canvas.Top="328" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="618" Canvas.Top="295" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="623" Canvas.Top="212" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="585" Canvas.Top="170" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="541" Canvas.Top="150" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="322" Canvas.Top="145" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="20" Canvas.Top="145"  Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-113" Canvas.Top="145" Tag="C" Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-113" Canvas.Top="180" Tag="C" Visibility="Hidden"/>
 
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-10" Canvas.Top="180"  Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="549" Canvas.Top="180" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="588" Canvas.Top="192" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="588" Canvas.Top="218" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="588" Canvas.Top="290" Tag="C" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="532" Canvas.Top="310" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="160" Canvas.Top="310" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="83" Canvas.Top="348"  Tag="C" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="83" Canvas.Top="465"  Tag="C" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="142" Canvas.Top="504" Tag="C" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="654" Canvas.Top="504" Tag="C" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="920" Canvas.Top="504" Tag="C" />
-        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="1002" Canvas.Top="504" Tag="C"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="-10" Canvas.Top="180"  Tag="C" Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="464" Canvas.Top="180" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="546" Canvas.Top="185" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="580" Canvas.Top="217" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="580" Canvas.Top="284" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="562" Canvas.Top="300" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="152" Canvas.Top="315" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="97" Canvas.Top="333"  Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="70" Canvas.Top="358"  Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="75" Canvas.Top="465"  Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="113" Canvas.Top="499" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="654" Canvas.Top="504" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="920" Canvas.Top="504" Tag="C"  Visibility="Hidden"/>
+        <Ellipse Fill="Aqua" Height="10" Width="10" Canvas.Left="1002" Canvas.Top="504" Tag="C" Visibility="Hidden"/>
 
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="378" Canvas.Top="217" Tag="TT" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="902" Canvas.Top="217" Tag="TT" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="1381" Canvas.Top="217" Tag="T" HorizontalAlignment="Center" VerticalAlignment="Top"   />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="1276" Canvas.Top="217" Tag="T" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="902" Canvas.Top="217" Tag="TT" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="378" Canvas.Top="217" Tag="TT" HorizontalAlignment="Center" VerticalAlignment="Top"  />
-        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="378" Canvas.Top="217" Tag="TT"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="902" Canvas.Top="217" Tag="TT"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="1381" Canvas.Top="217" Tag="T"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="1276" Canvas.Top="217" Tag="T"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="902" Canvas.Top="217" Tag="TT"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="378" Canvas.Top="217" Tag="TT"  Visibility="Hidden"/>
+        <Ellipse Fill="Red" Height="10" Width="10" Canvas.Left="-185" Canvas.Top="217" Tag="T"  Visibility="Hidden"/>
 
     </Canvas>
 </Window>
