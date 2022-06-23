@@ -93,6 +93,7 @@ namespace RoadProject_SO.Model
             if (CanColide)
                 LimitSpeedByVehicleDistance();
 
+            //GetNewGraphic();
             //Apply Speed to position
             MoveVehicleForward();
 
@@ -170,11 +171,11 @@ namespace RoadProject_SO.Model
             if (PublicAvaliableReferences.IsVehicleInTheWay(this))
             {
                 IsBehindVehicle = true;
-                if (PublicAvaliableReferences.CanVehicleOvertake(this))
-                {
-                    this.CurrentSpeed = this.VehicleSpeed;
-                    return;
-                }
+                //if (PublicAvaliableReferences.CanVehicleOvertake(this))
+                //{
+                //    this.CurrentSpeed = this.VehicleSpeed;
+                //    return;
+                //}
                 this.CurrentSpeed = PublicAvaliableReferences.GetNextVehicleSpeed(this);
             }
             else

@@ -36,7 +36,7 @@ namespace RoadProject_SO.Model
                 return;
 
             //There are more nodes outside of Canvas, skipping them for optimalization
-            if (NodesLeftToTravel == 2 || NodesLeftToTravel == 16)
+            if (NodesLeftToTravel == 2) //|| NodesLeftToTravel == 16)
             {
                 //Vehicle Arrived
                 DisableVehicle();
@@ -51,6 +51,8 @@ namespace RoadProject_SO.Model
                 return;
             }
 
+            GetNewGraphic();
+
             //if cannot move and doesn't ignore CanGoTo
             if (!CanMove || (!_nextNode.CanGoTo && !IgnoreNodeLimit))
             {
@@ -63,8 +65,6 @@ namespace RoadProject_SO.Model
 
             if (CanColide)
                 LimitSpeedByVehicleDistance();
-
-            GetNewGraphic();
 
             //apply speed to position
             MoveVehicleForward();
@@ -87,17 +87,15 @@ namespace RoadProject_SO.Model
         /// <summary>
         /// Resets <see cref="Car"/> position to the first <see cref="Node"/>
         /// </summary>
-        public void ResetPosition(int distance)
+        public void ResetPosition()
         {
-            //if(distance!=0)
-
-
-            this.TraveledDistance = distance;
+            this.TraveledDistance = 0;
             this.CurrentSpeed = VehicleSpeed;
             this.positionVector = GetNextNode(NodesLeftToTravel).Vector;
             this.DistanceToTravel = positionVector.Length;
             this.ActualPosition = new Point(this.positionVector.X, this.positionVector.Y);
         }
+
         /// <summary>
         /// Allows Car to ignore next <see cref="Node.CanGoTo"/>
         /// </summary>
